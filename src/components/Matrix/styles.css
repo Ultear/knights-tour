@@ -1,0 +1,38 @@
+.matrix{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  border:1px solid #e2e2e2;
+}
+
+.matrix__row{
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.matrix__row__field{
+  flex:1;
+  border-right: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matrix__row__field--active{
+  background: #e2e2e2;
+}
+
+.matrix__row:last-child,
+.matrix__row__field:last-child{
+  border:none;
+}
+
+@media screen and (max-width: 468px){
+  .matrix{
+    width:95vw;
+    height: 95vw;
+    margin:2.5vw auto;
+  }
+}
