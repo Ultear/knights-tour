@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      boardSize: 4
+      boardSize: 8
     }
 
     this.changeBoardSize = this.changeBoardSize.bind(this)
